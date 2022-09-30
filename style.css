@@ -76,9 +76,10 @@ nav ul li a:hover::before{
 }
 
 .information {
+    position: absolute;
     text-align: center;
-    margin-left: 50px;
-
+    margin-left: 36%;
+    
 
 }
 
@@ -235,120 +236,7 @@ margin-top: 30px;
 
 }
 
-/*------css small screen----*/
-nav .fa-solid{
 
-    display: none;
-
-}
-
-@media screen and (max-width: 600px){
-
-.logo{
-
-    
-    width: 200px;
-    position: absolute;
-    left: 125px;
-    top: 100px;
-    border:1px solid rgb(175, 175, 175);
-
-
-}
-.picture{
-
-    position: absolute;
-    left: 20px;
-    bottom: 450px;
-    top: 60px;
-    width: 100px;
-    
-
-}
-.btn{
-
-    display: block;
-    margin-bottom: 30px;
-    margin-left:85px;
-    width: fit-content;
-    border: 1px solid #E8EBF7;
-    background:  #383838;
-    padding: 30px 30px;
-    border-radius: 1px;
-    text-decoration: none;
-    color: #E8EBF7;
-    transition: transform 0.5s;
-    
-}
-
-
-nav .fa-solid{
-
-    display: block;
-    position:fixed;
-    right: 30px;
-    top: 20px;
-}
-nav ul{
-    background:  #241919;
-    position: fixed;
-    top: 0;
-    right: -150px;
-    width: 150px;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: 2;
-    transition: right 0.5s;
-     
-
-
-
-}
-nav ul li{
-
-    display: block;
-    margin: 30px;
-
-}
-
-nav ul .fa-solid
-{
-    position: absolute;
-    top: 25px;
-    left: 120px;
-    cursor: pointer;
-
-}
-
-.sub-title{
-
-    font-size: 24px;
-
-
-}
-
-.contact-info p{
-
-    font-size: 16px;
-
-
-}
-.contact-info p:hover {
-
-    
-    font-size: 20px;
-    
-
-}
-.copyright{
-
-    font-size: 16px;
-
-
-}
-        
-
-}
 
 
 
