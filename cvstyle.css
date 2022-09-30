@@ -1,0 +1,218 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    box-sizing: border-box;
+    
+    
+}
+
+body
+{
+    background: #383838;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container{
+
+position: relative;
+width: 100%;
+max-width: 1000px;
+min-height: 1000px;
+background: rgb(25, 0, 104);
+margin: 50px;
+display: grid;
+grid-template-columns: 1fr 2fr;
+
+}
+
+.container .left-side{
+
+    position: relative;
+    background: #003147;
+    padding: 40px;
+
+
+}
+.container .right-side{
+
+    position: relative;
+    background: #fff;
+    padding: 40px;
+
+
+}
+.about{
+
+    margin-bottom: 50px;
+
+
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+
+}
+.about .box .experience{
+    min-width: 150px;
+
+}
+.about .box .experience h3{
+    text-transform: uppercase;
+    color: #65A2FF;
+    font-size: 16px;
+
+}
+
+.title2{
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+p{
+    color: #333;
+
+}
+.profile-text{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rbga(255,255,255,0.1);
+}
+.profile-text .imagebox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.profile-text .imagebox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.profile-text h2{
+   color: #fff;
+   font-size: 1.5em;
+   margin-top: 3px;
+   text-align: center;
+   font-weight: 600;
+   line-height: 1.4em; 
+
+}
+.profile-text h2 span{
+    
+    font-size: 0.8em;
+    font-weight: 300;
+
+
+}
+.contact-info{
+
+    padding-top: 40px;
+
+}
+.title{
+
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600px;
+    margin-bottom: 30px;
+
+}
+
+.contact-info ul{
+
+position: relative;
+
+
+}
+
+.contact-info ul li{
+    color: #fff;
+    position: relative;
+    list-style: none;
+    margin: 20px 0;
+    cursor: pointer;
+
+}
+
+.contact-info ul li .icon{
+
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #65A2FF;
+
+}
+.contact-info ul li .text{
+    color: #fff;
+    font-weight: 300px;
+    
+
+}
+
+.contact-info a{
+
+    text-decoration: none;
+}
+
+.contact-info-education li{
+
+    margin-bottom: 15px;
+
+}
+.contact-info-education h5{
+
+    color: #65A2FF;
+    font-weight: 500;
+
+}
+.contact-info-education h4{
+    color: #fff;
+    font-weight: 500;
+}
+.contact-info-education a{
+
+    text-decoration: none;
+}
+
+
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 600px)
+{
+    .about .box{
+        flex-direction: column;
+    }
+
+    .about .box .experience{
+        
+        margin-bottom: 10px;
+    }
+}
