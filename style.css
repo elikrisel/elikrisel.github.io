@@ -83,6 +83,43 @@ nav ul li a:hover::before{
 
 }
 
+.container .right-side{
+
+    position: absolute;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 200px;
+    justify-content: space-between;
+
+
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #E8EBF7;
+
+    
+
+}
+.box .quote{
+    width: 300px;
+    height: 100px;
+    text-align: center;
+
+}
+.box .quote .text h4{
+    text-transform: uppercase;
+    color: #65A2FF;
+    font-size: 16px;
+    
+
+
+}
+.text h4{
+
+   
+
+}
 
 
 
