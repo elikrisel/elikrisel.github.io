@@ -73,6 +73,14 @@ grid-template-columns: 1fr 2fr;
     font-size: 16px;
 
 }
+.text h2{
+
+text-transform: uppercase;
+font-size: 14px;
+margin-top: 5px;
+margin-bottom: 10px;
+
+}
 .text h4{
 
     font-weight: 100;
