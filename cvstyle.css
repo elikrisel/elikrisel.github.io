@@ -73,6 +73,11 @@ grid-template-columns: 1fr 2fr;
     font-size: 16px;
 
 }
+.text h4{
+
+    font-weight: 100;
+
+}
 
 .title2{
     color: #000;
@@ -169,31 +174,33 @@ position: relative;
     color: #fff;
     font-weight: 300px;
     
+    
 
 }
 
-.contact-info a{
-
-    text-decoration: none;
-}
 
 .contact-info-education li{
 
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 
 }
 .contact-info-education h5{
 
     color: #65A2FF;
     font-weight: 500;
+    
+    
 
 }
 .contact-info-education h4{
     color: #fff;
     font-weight: 400;
+    text-decoration: none;
+    margin-bottom: auto;
 }
-.contact-info-education a{
+.contact-info-education a {
 
+    color: #fff;
     text-decoration: none;
 }
 
