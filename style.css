@@ -18,14 +18,51 @@ body
 {
     background: #383838;
     color: #E8EBF7;
+    
 
 }
 
 
 .container{
 
- padding: 10px 10%; 
+    padding: 10px 10%;
+    
 
+
+}
+.content{
+
+    
+    max-width: 1000px;
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+
+}
+.content h3{
+    
+    color:#65A2FF;
+    font-size: 18px;
+}
+
+.content .picture{
+
+    
+    margin-left: 40%;
+    width: 300px;
+    height: auto;
+    
+    
+}
+.title{
+
+text-transform: uppercase;
+color: #fff;
+font-size: 26px;
+text-align: center;
+margin-left: auto;
+padding: 20px;
 
 }
 
@@ -59,42 +96,13 @@ nav ul li a{
 }
 
 
-
-
 nav ul li a:hover::before{
     transform-origin: left;
     transform: scaleX(1);
 
 }
 
-.picture {
 
-    align-items: center;
-    margin-top: 5%;
-    margin-left: 45%;
-    width: 200px;
-    
-
-}
-
-.information {
-    position: absolute;
-    text-align: center;
-    margin-left: 36%;
-    
-
-}
-
-.container .right-side{
-
-    position: absolute;
-    display: inline-block;
-    margin-left: 50px;
-    margin-top: 150px;
-    justify-content: space-between;
-
-
-}
 .box{
     display: flex;
     flex-direction: row;
