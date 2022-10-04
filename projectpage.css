@@ -21,43 +21,44 @@
     
     }
 
-    nav{
+ 
+nav{
     
-        margin-left: 38%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        
+    margin-left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     
-    }
-    
-    
-    
-    nav ul li {
-    
-    display: inline-block;
-    list-style: none;
-    margin: 30px 20px;
-    
-    }
-    
-    nav ul li a{
-        color: #E8EBF7;
-        text-decoration: none;
-        font-size: 20px;
-        position: relative;
-    
-    }
-    
-    
-    
-    
-    nav ul li a:hover::before{
-        transform-origin: left;
-        transform: scaleX(1);
-    
-    }
+
+}
+
+
+
+nav ul li {
+
+display: inline-block;
+list-style-type: none;
+margin: 10px 30px;
+
+}
+
+nav ul li a{
+    color: #E8EBF7;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    text-transform: capitalize;
+
+}
+
+
+nav ul li a:hover{
+    color:#65A2FF;
+    transition: 0.3s;
+
+}
     
     .container{
 

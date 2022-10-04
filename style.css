@@ -32,42 +32,61 @@ body
 }
 .content{
 
-    display: block;
-    max-width: auto;
+    width: 100%;
+    padding: 50px 0px;
+
+
+}
+.content img{
+    height: auto;
+    width: 400px;
     margin: auto;
-    height: 50vh;
     display: flex;
     align-items: center;
-    position: relative;
+}
+.introduction{
+
+    width: 550px;
 
 }
-.content h3{
+.about{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.introduction h2{
+    font-size: 70px;
+    text-transform: uppercase;
+    margin: auto;
+
+
+}
+.introduction h4{
+
+    letter-spacing: 1px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
     
-    margin-left: 10%;
+
+}
+.introduction h5{
+
     color:#65A2FF;
-    font-size: 18px;
-    width: fit-content;
+    font-size: 30px;
+    text-align: center;
+    text-transform: bold;
+    margin-top: 30px;
+    
+
+
 }
 
-.content .picture{
-
-    
-    margin-left: 40%;
-    width: 300px;
-    height: auto;
-    
-    
-}
-.title{
-
-text-transform: uppercase;
-color: #fff;
-font-size: 26px;
-text-align: center;
-margin-left: auto;
-padding: 20px;
-
-}
 
 nav{
     
@@ -85,50 +104,28 @@ nav{
 nav ul li {
 
 display: inline-block;
-list-style: none;
-margin: 30px 20px;
+list-style-type: none;
+margin: 10px 30px;
 
 }
 
 nav ul li a{
     color: #E8EBF7;
+    font-weight: bold;
     text-decoration: none;
     font-size: 20px;
     position: relative;
+    text-transform: capitalize;
 
 }
 
 
-nav ul li a:hover::before{
-    transform-origin: left;
-    transform: scaleX(1);
+nav ul li a:hover{
+    color:#65A2FF;
+    transition: 0.3s;
 
 }
 
-
-.box{
-    display: flex;
-    flex-direction: row;
-    
-
-    
-
-}
-.box .quote{
-    padding: 5px;
-    width: 300px;
-    height: 50px;
-    text-align: center;
-
-}
-.box .quote .text h4{
-    text-transform: uppercase;
-    color: #65A2FF;
-    font-size: 16px;
-    
-
-
-}
 
 
 
