@@ -102,7 +102,7 @@ font-size: 28px;
 
 }
 
-.btn{
+ .btn{
 
     display: block;
     margin-bottom: 50px;
@@ -128,6 +128,42 @@ font-size: 28px;
     box-shadow: 2px 2px #8888;
 
 }
+@media (max-width: 600px)
+{
+
+.image-section{
+
+    margin: 50%;
+    
+
+}
+.image-section img{
+
+    
+    width: 200px;
+
+}
+
+.content-section .title h1 {
+    font-size: 28px;
+
+}
+
+.content-section .content h3{
+
+    font-size: 23px;
+
+}
+.content-section .content p{
+
+    font-size: 15px;
+}
+
+
+
+}
+
+
 
 
 
