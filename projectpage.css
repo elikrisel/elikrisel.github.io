@@ -169,8 +169,32 @@ nav ul li a:hover{
         transition: transform 0.5s;
         
     }
-    
+    .btn2{
+
+        display: block;
+        align-items: left;
+        margin-bottom: 50px;
+        width: fit-content;
+        border: 1px solid #E8EBF7;
+        background:  #383838;
+        padding: 20px 50px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #E8EBF7;
+        transition: transform 0.5s;
+        
+    }    
     .btn:hover{
+    
+        border: 1px solid #65A2FF;
+        background-color:#65A2FF;
+        text-shadow: 2px 3px 15px rgb(22, 5, 5);
+        color:#E8EBF7;
+        transform: translateY(-20px);
+        box-shadow: 2px 2px #8888;
+    
+    }
+    .btn2:hover{
     
         border: 1px solid #42268d;
         background-color:#42268d;
@@ -180,7 +204,6 @@ nav ul li a:hover{
         box-shadow: 2px 2px #8888;
     
     }
-
     .walloftext{
 
         text-align: center;
@@ -235,23 +258,6 @@ nav ul li a:hover{
 
     }
 
-
-    .btn2{
-
-        display: block;
-        align-items: left;
-        margin-bottom: 50px;
-        
-        width: fit-content;
-        border: 1px solid #E8EBF7;
-        background:  #383838;
-        padding: 20px 50px;
-        border-radius: 5px;
-        text-decoration: none;
-        color: #E8EBF7;
-        transition: transform 0.5s;
-        
-    }
 
 
     .sub-title{

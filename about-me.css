@@ -120,8 +120,8 @@ font-size: 28px;
 
 .btn:hover{
 
-    border: 1px solid #42268d;
-    background-color:#42268d;
+    border: 1px solid #65A2FF;
+    background-color:#65A2FF;
     text-shadow: 2px 3px 15px rgb(22, 5, 5);
     color:#E8EBF7;
     transform: translateY(-20px);
