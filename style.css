@@ -26,24 +26,27 @@ body
 .container{
 
     padding: 10px 10%;
-    
+    position: relative;
 
 
 }
 .content{
 
-    
-    max-width: 1000px;
+    display: block;
+    max-width: auto;
     margin: auto;
     height: 50vh;
     display: flex;
     align-items: center;
+    position: relative;
 
 }
 .content h3{
     
+    margin-left: 10%;
     color:#65A2FF;
     font-size: 18px;
+    width: fit-content;
 }
 
 .content .picture{
@@ -68,7 +71,7 @@ padding: 20px;
 
 nav{
     
-    margin-left: 38%;
+    margin-left: 35%;
     display: flex;
     align-items: center;
     justify-content: space-between;
