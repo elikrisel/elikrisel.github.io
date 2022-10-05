@@ -18,15 +18,17 @@
 
 <nav>
   
-    <ul>
+    <ul id="sidemenu">
         
         
         <li><a href="about.html">About me</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         
 
     </ul>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
 
 </nav>
 
@@ -45,15 +47,6 @@
     </div>
 
 </div>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -137,6 +130,19 @@
 
 </div>
 
+<script>
+
+var menu = document.getElementById("sidemenu");
+
+function openmenu(){
+    menu.style.right = "0";
+}
+function closemenu(){
+    menu.style.right = "-400px";
+}
+
+
+</script>
 
 </body>
 
