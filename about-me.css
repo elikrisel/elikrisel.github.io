@@ -19,7 +19,6 @@ body
 
 }
 
-
 nav{
     
     margin-left: 35%;
@@ -58,49 +57,57 @@ nav ul li a:hover{
 
 }
 
-.section{
-    width: 100%;
-    min-height: 100vh;
-}
+
 .container{
-    width: 80%;
-    display: block;
-    margin: auto;
-    padding-top: 100px;
-}
-.content-section{
 
-    float: left;
-    width: 55%;
+    padding: 10px 10%;
+    position: relative;
+
 
 }
-.image-section{
-    float: right;
-    width: 40%;
 
-}
-.image-section img{
+.about{
     width: 100%;
+    padding: 100px;
+
+}
+.about-text{
+    width: 550px;
+
+}
+.about img{
+
     height: auto;
+    width: 430px;
+}
+.main{
+
+    width:1130px;
+    max-width: 95%; 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
 
 }
-.content-section .title{
-text-transform: uppercase;
-font-size: 28px;
+.about-text h2{
+    color:#E8EBF7;
+    font-size: 70px;
+    text-transform: uppcase;
+    margin-bottom: 20px;
 
 }
-.content-section .content h3{
-    font-size: 26px;
-    margin-top: 30px;
+.about-text p{
+
     color: #E8EBF7;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-size: 18px;
+    margin-bottom: 20px;
 
 }
-.content-section .content p{
-    margin-top: 10px;
-    font-size: 20px;
-    line-height: 1.5;
 
-}
 
  .btn{
 
@@ -128,37 +135,64 @@ font-size: 28px;
     box-shadow: 2px 2px #8888;
 
 }
+nav .fa-solid{
+
+    display: none;
+}
+
 @media (max-width: 600px)
 {
 
-.image-section{
-
-    margin: 50%;
-    
-
-}
-.image-section img{
 
     
-    width: 200px;
+    nav .fa-solid{
 
-}
+        display: block;
+        font-size: 20px;
+    }
+    nav{
 
-.content-section .title h1 {
-    font-size: 28px;
+        margin-left: 100%;
 
-}
+    }
+    nav ul{
 
-.content-section .content h3{
+        background: #000;
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 100%;
+        height: 35vh;
+        padding-top: 20px;
+        z-index: 2;
+        transition: right 0.5s;
 
-    font-size: 23px;
+    }
+    nav ul li{
 
-}
-.content-section .content p{
+        display: block;
+        margin: 25px;
 
-    font-size: 15px;
-}
 
+    }
+    nav ul li a{
+
+        
+        font-size: 20px;
+        margin: 130px;
+        
+
+    }
+    nav ul .fa-solid{
+
+
+        position: absolute;
+        top: 0px;
+        right: 25px;
+        cursor:pointer;
+
+
+    }
 
 
 }

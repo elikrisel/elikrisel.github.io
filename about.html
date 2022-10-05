@@ -10,47 +10,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-
-
-
-
-
-
 </head>
 
 <body>
 
-    
-
-
-<div class="section">
-    <nav>
- 
-    
-        <ul id="sidemenu">
-            
-            
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#projects">Projects</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-            
-    
-        </ul>
-        
-          
-            
-            
-        
-    
-    </nav>
     <div class="container">
-        <div class="content-section">
 
-            <div class="title">
-                <h1>About me</h1>
-            </div>
-            <div class="content">
-                <h3>Introduction</h3>
+        <nav>
+          
+            <ul id="sidemenu">
+                
+                
+                <li><a href="about.html">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                
+        
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        
+        </nav>
+        
+        </div>    
+
+
+
+    <section class="about">
+        <div class="main">
+            
+            <div class="about-text">
+                <h2>Introduction</h2>
                 <p>Hello and Welcome to my portfolio!</p>
                 <p><br>My name is Kristofer Sell and I recently moved to Skellefteå, Sweden to begin my new chapter as Game Programmer.</p>
                 <p><br>I grew a passion for video games back when I was about seven years old when my dad introduced me to Super Mario All-Stars on Super Nintendo Entertainment System. <br>Since then I have grown fond of video games such as platformers 
@@ -58,27 +48,34 @@
                 <p><br>During my free time I like to play and make games. I have been in few game projects and game jams and thriving to expand my knowledge.</p>
                 <p><br>I also have a interest to go out in the nature and take photographs of beautiful environment.</p>
             </div>
+            <img src="images/aboutmepicture.png">
+
+            
+
         </div>
-        <div class="image-section">
-            <img src="images/aboutmepicture.png"> 
-        </div>
+
+
+
+    </div>
+
+    <div class="container">
+        <a href="index.html" div class="btn">Go Back</a>
     </div>
 
 
+    <script>
 
-</div>
-
-
-<div class="new-section">
-
-    
-    <a href="index.html" div class="btn">Go Back</a>
-
-
-
-
-</div>
-
+        var menu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            menu.style.right = "0";
+        }
+        function closemenu(){
+            menu.style.right = "-400px";
+        }
+        
+        
+        </script>
 
 
 </body>
