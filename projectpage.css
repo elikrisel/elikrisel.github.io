@@ -201,7 +201,6 @@ nav ul li a:hover{
         background-color:#42268d;
         text-shadow: 2px 3px 15px rgb(22, 5, 5);
         color:#E8EBF7;
-        transform: translateY(-20px);
         box-shadow: 2px 2px #8888;
     
     }
@@ -250,6 +249,10 @@ nav ul li a:hover{
         margin-bottom: 100px;
         border-top: 5px solid #bbb;
 
+    }
+    nav .fa-solid{
+
+        display: none;
     }
 
 
