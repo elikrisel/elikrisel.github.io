@@ -143,6 +143,39 @@ nav .fa-solid{
 @media (max-width: 600px)
 {
 
+    .about{
+        padding: auto;
+    
+    }
+    .about img{
+        margin-bottom: auto;
+        width: 150px;
+    }
+
+    .about-text{
+
+        padding: 20px;
+
+    }
+    .about-text h2{
+        font-size: 30px;
+         
+          
+
+    }
+    
+    .about-text p{
+
+    font-size: 12px;
+
+    }
+   
+    .btn{
+
+        margin: auto;
+        font-size: 10px;
+
+    }
 
     
     nav .fa-solid{
@@ -193,6 +226,7 @@ nav .fa-solid{
 
 
     }
+
 
 
 }
