@@ -148,17 +148,20 @@ nav .fa-solid{
     
     }
     .about img{
-        margin-bottom: auto;
-        width: 150px;
+       
+        width: 200px;
+        margin-bottom: 600%;
     }
 
     .about-text{
 
         padding: 20px;
+        
 
     }
     .about-text h2{
-        font-size: 30px;
+        font-size: 32px;
+        
          
           
 
@@ -166,14 +169,15 @@ nav .fa-solid{
     
     .about-text p{
 
-    font-size: 12px;
+    font-size: 16px;
+    margin: auto;
 
     }
    
     .btn{
 
         margin: auto;
-        font-size: 10px;
+        font-size: 14px;
 
     }
 
@@ -185,7 +189,8 @@ nav .fa-solid{
     }
     nav{
 
-        margin-left: 100%;
+        position: fixed;
+        margin-left: 85%;
 
     }
     nav ul{
@@ -220,7 +225,7 @@ nav .fa-solid{
 
 
         position: absolute;
-        top: 0px;
+        top: 20px;
         right: 25px;
         cursor:pointer;
 

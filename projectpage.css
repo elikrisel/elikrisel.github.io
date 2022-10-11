@@ -321,7 +321,8 @@ nav .fa-solid{
 }
 nav{
 
-    margin-left: 100%;
+    position: fixed;
+    margin-left: 85%;
 
 }
 nav ul{
@@ -356,7 +357,7 @@ nav ul .fa-solid{
 
 
     position: absolute;
-    top: 0px;
+    top: 20px;
     right: 25px;
     cursor:pointer;
 
