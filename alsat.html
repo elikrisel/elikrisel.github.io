@@ -15,20 +15,26 @@
 
 <body>
 
-    <div class="container">
+    <div class="container2">
 
         <nav>
-
+          
             <ul id="sidemenu">
-
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-
-
+                
+                
+                <li><a href="degree.html">Degree Project</a></li>
+                <li><a href="projects.html">Leklådan</a></li>
+                <li><a href="isvak.html">Isvak</a></li>
+                <li><a href="index.html">Go Back</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                
+        
             </ul>
-
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        
         </nav>
+        
+    </div>
 
         <div class="description">
             <h2>Team Members: </h2>
@@ -136,12 +142,20 @@
         
     </div>
 
+
     <div class="container">
-        <iframe width="800" height="600"
-        src="https://www.youtube.com/embed/DEtIsXirZGs?mute=1">
-        </iframe>
-    
-    </div>
+       
+        <div class="video">
+ 
+        <iframe width="800" height="600" src="https://www.youtube.com/embed/DEtIsXirZGs?mute=1">
+         </iframe>
+ 
+        </div>
+        
+         
+ 
+     </div>
+ 
 
 
     <div class="container">
@@ -167,7 +181,19 @@
 
 
 
+    <script>
 
+        var menu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            menu.style.right = "0";
+        }
+        function closemenu(){
+            menu.style.right = "-900px";
+        }
+        
+        
+        </script>
 
 
     
