@@ -16,42 +16,46 @@
 
 <div class="container">
 
-<nav>
-  
-    <ul id="sidemenu">
-        
-        
-        <li><a href="about.html">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-        
+    
+        <nav id="nav">
+            <ul class="container">
+                
+                <li><a href="#top">Top</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
 
-    </ul>
-    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-
-</nav>
+                
+            </ul>
+            
+        </nav>
 
 </div>
 
-<div class="content">
 
-    <div class="about">
-        <img src="images/picture.png">
-        <div class="introduction">
-            <h2>Kristofer Sell</h2>
-            <h4>Game Programmer</h4>
-            <h5>Aspiring to grow as a Game Programmer <br>I like making platformers</h5>
+<article id="top" class="wrapper style1">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-5-large col-12-medium">
+                <span class="image fit"><img src="images/updatedprofile.png" alt="" /></span>
+            </div>
+            <div class="col-8 col-7-large col-12-medium">
+                <header>
+                    <h1>Kristofer Sell <br><strong>Game Programmer</strong></br></h1>
+                </header>
+                <h5>A goal-oriented developer with the knowledge of C#<br>
+                    I aspire to grow further as a game programmer</br></h5>
+                    <footer>
+                    <a href="cv.html" class="button large scrolly">VIEW CV</a>
+                </footer>
+            </div>
         </div>
-    
     </div>
 
-</div>
+</article>
 
 
-
-
-<a href="cv.html" div class="btn">View CV</a>
 
 </div>
 
@@ -59,8 +63,21 @@
 <div id="projects">
 
 <div class="container">
-<h1 class="sub-title">Projects</h1>
+<h1>Projects</h1>
+
 <div class="work-list">
+    <div class="work">
+        <div class="description">
+            
+            
+
+        </div>
+       
+        <a href="coldwalk.html"><img src="images/coldwalk.png"></a>
+      
+    </div>
+
+
 
 
         <div class="work">
@@ -106,18 +123,17 @@
 <div class="container">
 <div class="row">
     <div class="contact-info">
-        <h1 class="sub-title">Contact Me</h1>
+
+        <h1>Contact Me</h1>
         <p>Kristofer Sell</p>
-        <p><i class="fa-solid fa-envelope"></i> kristofer.sell@futuregames.nu</p>
+        <p><i class="fa-solid fa-envelope"></i> kristofersell@outlook.com</p>
         <p><i class="fa-solid fa-phone"></i> +46 790-402-862</p>
         <div class="social">
-            <a href="https://github.com/elikrisel"><i class="fa-brands fa-github"></i></a> 
+            <a href="https://github.com/elikrisel/"><i class="fa-brands fa-github"></i></a> 
             <a href="https://www.linkedin.com/in/kristofer-sell-299a36212/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="mailto: kristofer.sell@futuregames.nu"><i class="fa-solid fa-envelope"></i></a>
+            <a href="mailto: kristofersell@outlook.com"><i class="fa-solid fa-envelope"></i></a>
             <a href="tel:+4679-040-28-62"><i class="fa-solid fa-phone"></i></a>
-        </div>
-
-        
+        </div>     
 
     </div>
 </div>
@@ -132,19 +148,14 @@
 
 </div>
 
-<script>
-
-var menu = document.getElementById("sidemenu");
-
-function openmenu(){
-    menu.style.right = "0";
-}
-function closemenu(){
-    menu.style.right = "-400px";
-}
 
 
-</script>
+<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
 </body>
 
