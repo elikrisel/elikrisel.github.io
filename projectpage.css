@@ -110,6 +110,10 @@
         margin-top: 10px;
 
     }
+    .container h3{
+        font-size: 32px;
+        
+        }
 
     .image-container{
 
@@ -333,6 +337,10 @@
 .container{
 
     margin: auto;
+
+}
+.container h3{
+font-size: 26px;
 
 }
 
