@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Project Playground</title>
+</head>
+<!-- Project Data -->
+<body data-project="playground">
+    <div class="background-image" style="background-image: url('./images/lekladanresized.png');"></div>
+    
+    <header class="header">
+        <a href="index.html" class="logo">Kristofer</a>
+    </header>
+
+    <!-- ======INITIAL IMAGE AND INFO SECTION===== -->
+    <section class="top" id="top">
+        <div class="project-container">
+            <img src="./images/playground/lekladan2.gif" alt="Project Image" class="project-image">
+            <div class="overlay">
+                <div class="overlay-text"><h3>Leklådan</h3></div>
+            </div>
+        </div>
+
+        <!-- ======INFORMATION SECTION===== -->
+        <div class="info-section">
+            <div class="about-box">
+                <h2>About</h2>
+                <p>
+                    Leklådan is a 4 player party game with the target audience for people in all ages.  
+                </p>
+                <div class="info-item">
+                    <i class='bx bxl-github'></i> 
+                    <a href="https://github.com/elikrisel/Project-Lekladan"><span>Repository</span></a>
+                </div>
+                <div class="info-item">
+                    <i class='bx bxs-game' ></i> 
+                    <a href="https://iskaffe.itch.io/lekldan"><span>itch.io</span></a>
+                </div>
+            </div>
+
+            <div class="project-info-box">
+                <h2>Project Info</h2>
+                <div class="info-item">
+                    <i class='bx bx-user'></i> 
+                    <span>Role: Game Programmer</span>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-group'></i>
+                    <span>Team Size: 8</span>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-cog'></i> 
+                    <span>Engine: Unity Engine</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======TEXT SECTION===== -->
+    <section class="project-description" id="project-description">
+        <h2 class="heading">Introduction</h2>
+        <p>My last game project at Futuregames. We were making a prototype for a studio, 
+        our team got assigned to make a saboteur party game. When we got to the drawing board,
+         we were considering to make many party games, but given the time constrains 
+         we decided to focus on one mini-game and we decided to take inspiration of <i>Mr. Bucket</i>.</p>
+        
+         <p>The goal of the game is one player plays as the bucket while the other three are picking up balls to throw at him to score points over a time limit. 
+            The player who plays as the bucket needs to shoot back the balls towards the player or run over them to score points. If they are defeating all the player, they win.</p>
+        <h2 class="heading">Code</h2>
+        <p>My role was I wrote code together with my co-programmer with the core mechanics. I was also in charge of the repository. 
+            The mechanics I was in charge of and implementing was <a href="https://github.com/elikrisel/Project-Lekladan/tree/main/Assets/Scripts/KristoferScripts/Pickup" div class="text-hover"><i>throwing</i></a>
+            and shooting mechanics for the players and glow shader for the items.
+        </p>
+        <h2 class="heading">Conclusion</h2>
+        <p>Given the short amount of time we made a playable product with proper a game loop. Me and my team were able to co-operate more than well, there were no crunch involved
+            and we finished bugfixing way before the deadline.
+        </p>
+        
+        
+    </section>
+
+    <!-- ======GALLERY SECTION===== -->
+    <section class="gallery" id="gallery">
+    <h2 class="heading">Gallery</h2>
+    <div class="gallery-container">
+        <button id="prev" class="nav-button"><i class='bx bx-chevron-left'></i></button>
+        <img src="./images/playground/image1.png" alt="Gallery Image" class="gallery-image" id="galleryImage">
+        <button id="next" class="nav-button"><i class='bx bx-chevron-right'></i></button>
+    </div>
+
+    <div class="iframe-container">
+        
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf-rR6QTc6k?mute=1" frameborder="0";></iframe>
+        
+    </div>
+
+    </section>
+    
+    <!-- ======TRAILER SECTION===== -->
+ 
+
+
+    <footer class="footer">
+        <div class="footer-topicon">
+            <a href="index.html"><i class='bx bxs-left-arrow-square'></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts/project.js"></script>
+</body>
+</html>

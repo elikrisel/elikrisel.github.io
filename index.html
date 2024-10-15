@@ -1,162 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="U-XA-Compatible" content="IE-edge">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Kristofer Sell - Game Programmer</title>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/45a5033209.js" crossorigin="anonymous"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristofer Sell | Game Programmer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
+ <!-- ======HEADER===== -->
+    <header class="header">
+        <a href="#home" class="logo">Kristofer</a>
+        
+        <div class="dot-indicators">
+            <span class="dot" data-section="home"></span>
+            <span class="dot" data-section="about"></span>
+            <span class="dot" data-section="projects"></span>
+            
+        </div>
 
-<div class="container">
-
-    
-        <nav id="nav">
-            <ul class="container">
-                
-                <li><a href="#top">Top</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                
-
-                
-            </ul>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
             
         </nav>
+    
+    </header>
 
-</div>
+ <!-- ======HOME SECTION===== -->
 
+    <section class="home" id="home">
 
-<article id="top" class="wrapper style1">
-    <div class="container">
-        <div class="row">
-            <div class="col-4 col-5-large col-12-medium">
-                <span class="image fit"><img src="images/updatedprofile.png" alt="" /></span>
-            </div>
-            <div class="col-8 col-7-large col-12-medium">
-                <header>
-                    <h1>Kristofer Sell <br><strong>Game Programmer</strong></br></h1>
-                </header>
-                <h5>A goal-oriented developer with the knowledge of C#<br>
-                    I aspire to grow further as a game programmer.</br></h5>
-                    <footer>
-                    <a href="cv.html" class="button large scrolly">RESUME</a>
-                </footer>
-            </div>
-        </div>
+    <div class="home-image">
+        <img src="images/picture.png" alt="">
     </div>
 
-</article>
+    <div class="home-container">
 
+        <div class="home-info">
+            <div class="home-content">
+                <h1>Kristofer Sell</h1>
+                <h3>Game Programmer</h3>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur commodi cumque totam dolore, suscipit excepturi facilis ipsa porro, harum soluta atque assumenda, 
+                    dignissimos quas quam voluptatem culpa. Ea, ipsum nihil.</p> -->
+            </div>
 
+            <div class="home-sci">
+                <a href="#" id="github" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="#" id="linkedin" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="#" id="mail" target="_blank"><i class='bx bx-envelope'></i></a>
+            </div>
 
-</div>
-
-<!-- ---Projects--- -->
-<div id="projects">
-
-<div class="container">
-<h1>Projects</h1>
-
-<div class="work-list">
-    <div class="work">
-        <div class="description">
-            
-            
-
+            <a href="doc/KristoferSellResume.pdf" target="_blank" class="btn">Resume</a>
         </div>
-       
-        <a href="coldwalk.html"><img src="images/coldwalk.png"></a>
-      
+
+    </section>    
+
+
+
+ <!-- ======ABOUT ME===== -->
+<section class="about" id="about">
+    <h2 class="heading">About <span>Me</span></h2>
+    <div class="about-content">
+        <h3>Hi, I'm Kristofer!</h3>
+        <p>I am a Game Programmer, but also consider myself as a technical game designer, from Sweden. I grew a passion for video games back when my dad introduced me to videogames. This early love for video-games led me to experiment with many different designs and core mechanics on paper until I decided to take the leap to pursue a career in the games and started to study at Futuregames in 2020.</p>
+        <p>If I would describe myself, it would be I am a problem-solver who always seeks the opportunity to improve myself and thriving to get knowledge both from coding and design. Down below you can see the projects I did during my education and I am currently seekings for new opportunities to get the first big step in game industry.</p>
+    
+    
     </div>
 
+    <div class="tab-links">
+        <button class="tab-button active" data-tab="tab1">Technical Experience</button>
+        <button class="tab-button" data-tab="tab2">Education</button>
+    </div>
 
-
-
-        <div class="work">
-            <div class="description">
-                
-                
-
-            </div>
-           
-            <a href="projects.html"><img src="images/lekladanresized.png"></a>
-          
-        </div>
-
+    <div class="tab-content">
+            
+        <div class="tab-panel active" id="tab1">
+            <div class="skills-column">
+                <div class="skill-box">
+                    <span class="skill-name">C#</span>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Unity Engine</span>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Git</span>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Unreal Engine</span>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">HTML/CSS</span>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Javascript</span>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Blender</span>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Maya</span>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Figma</span>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Godot Engine</span>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">C++</span>
+                </div>
         
-        <div class="work">
-            <div class="description">
-                
-                
-
             </div>
-            <a href="isvak.html"><img src="images/isvakresized.png"></a>
+            
         </div>
-        <div class="work">
-            <div class="description">
-                
-                
-
+        <div class="tab-panel" id="tab2">
+            <div class="education-column">
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year">
+                                2020-2023
+                            </div>
+                            <h3>Futuregames - Higher Vocational Education</h3>
+                            <p>Game Programming</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="alsat.html"><img src="images/game3resized.png"></a>
-        </div>
-
-</div>
-
-
-
-</div> 
-
-
-</div>
-
-<!---Contact----->
-<div id="contact">
-<div class="container">
-<div class="row">
-    <div class="contact-info">
-
-        <h1>Contact Me</h1>
-        <p>Kristofer Sell</p>
-        <p><i class="fa-solid fa-envelope"></i> kristofersell@outlook.com</p>
-        <p><i class="fa-solid fa-phone"></i> +46 790-402-862</p>
-        <div class="social">
-            <a href="https://github.com/elikrisel/"><i class="fa-brands fa-github"></i></a> 
-            <a href="https://www.linkedin.com/in/kristofer-sell-299a36212/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="mailto: kristofersell@outlook.com"><i class="fa-solid fa-envelope"></i></a>
-            <a href="tel:+4679-040-28-62"><i class="fa-solid fa-phone"></i></a>
-        </div>     
-
     </div>
-</div>
-
-<div class="copyright">
-    <p>Copyright © 2022 by Kristofer Sell</p>
-
-</div>
-
+    
 </div>
 
 
-</div>
+</section>
 
 
+  <!-- ======PROJECTS SECTION===== -->
+<section class="projects" id="portfolio">
+    <h2 class="heading">Projects</h2>
+    <div class="project-grid">
+          <!-- ======PROJECT-ITEM===== -->
+        <div class="project-item">
+        <a href="project-coldwalk.html" id="coldwalk"><img src="images/coldwalk.png" alt="projectcoldwalk"></a>
+            <div class="project-overlay">
+                <h3>Slide Into Luleå</h3>
+                <p class="role">Role: Game Programmer</p>
+                <p class="description">Internship project.</p>
+                <div class="icons">
+                    <div class="icon-item">
+                        <i class='bx bxs-alarm'></i>
+                        <span>6 months</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class='bx bxs-cog' ></i>
+                        <span>Unity Engine</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <a href="project-playground.html" id="playground"><img src="images/lekladanresized.png" id="playground" alt="schoolproject-1"></a>
+            <div class="project-overlay">
+                <h3>Leklådan</h3>
+                <p class="role">Role: Game Programmer</p>
+                <p class="description">Third game project during my Education. We got assigned to create a saboteur-esque minigame for family at all ages.</p>
+                <div class="icons">
+                    <div class="icon-item">
+                        <i class='bx bxs-alarm'></i>
+                        <span>4 weeks</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class='bx bxs-cog'></i>
+                        <span>Unity Engine</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <a href="project-holeinice.html" id="holeinice"><img src="images/game2.png" id="holeinice" alt="schoolproject-2"></a>
+            <div class="project-overlay">
+                <h3>Isvak</h3>
+                <p class="role">Role: Game Programmer</p>
+                <p class="description">Second game project during my education. We were working with the theme <i>Post apolapytic atmosphere</i>.</p>
+                <div class="icons">
+                    <div class="icon-item">
+                        <i class='bx bxs-alarm'></i>
+                        <span>6 weeks</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class='bx bxs-cog'></i>
+                        <span>Unity Engine</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-item">
+            <a href="project-alsat.html" id="alsat"><img src="images/game3resized.png" id="alsat" alt="schoolproject-3"></a>
+            <div class="project-overlay">
+                <h3>ALSAT</h3>
+                <p class="role">Role: Developer</p>
+                <p class="description">First game project during my education. The game has the theme co-operative platformer.</p>
+                <div class="icons">
+                    <div class="icon-item">
+                        <i class='bx bxs-alarm'></i>
+                        <span>6 weeks</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class='bx bxs-cog'></i>
+                        <span>Unity Engine</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
 
-<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+     <!-- ======FOOTER===== -->
+      <footer class="footer">
+        <div class="footer-topicon">
+            <a href=""><i class='bx bxs-up-arrow-square'></i></a>
+        </div>
+      </footer>
 
+      <script src="script.js"></script>
 </body>
-
 </html>

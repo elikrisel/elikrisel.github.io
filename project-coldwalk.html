@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Project 1</title>
+</head>
+<body>
+    <div class="background-image" style="background-image: url('./images/coldwalk.png');"></div>
+    
+    <header class="header">
+        <a href="index.html" class="logo">Kristofer</a>
+    </header>
+
+    <!-- ======INITIAL IMAGE AND INFO SECTION===== -->
+    <section class="top" id="top">
+        <div class="project-container">
+            <img src="./images/companylogo.png" alt="Project Image" class="project-image">
+            <div class="overlay">
+                <div class="overlay-text"><h3>Slide Into Luleå</h3></div>
+            </div>
+        </div>
+
+        <!-- ======INFORMATION SECTION===== -->
+        <div class="info-section">
+            <div class="about-box">
+                <h2>About</h2>
+                <p>
+                    A Project I worked on my internship from scratch along with other interns and studio leads. We were tasked to work on a platformer on mobile.
+                </p>
+            </div>
+
+            <div class="project-info-box">
+                <h2>Project Info</h2>
+                <div class="info-item">
+                    <i class='bx bx-user'></i> 
+                    <span>Role: Lead Game Developer</span>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-group'></i>
+                    <span>Team Size: 4</span>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-cog'></i> 
+                    <span>Engine: Unity Engine</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======TEXT SECTION===== -->
+    <section class="project-description" id="project-description">
+        <h2 class="heading">Introduction</h2>
+        <p>During this internship I got a really huge role that tested my skills early, I was solo developer on the project and needed to implement all the core mechanics that was needed in the project.
+            Even with heavy workload I took the opportunity to learn everything that was needed in object oriented programming and also took help from a mentor I got assigned to at the beginning. The mentor was located elsewhere, so I had weekly stand-ups with him in case I had general programming or was stuck.
+        </p>
+        
+        <h2 class="heading">Codes</h2>
+    
+        <p>I can't provide with repository because I signed under an Non-Disclosure Agreement, however, I am still allowed to show a couple of code snippets what I worked on.</p>
+        <!-- Code Snippet -->
+        <div class="collapsible-code">
+            <p> I used a central hub for the character that controlled most of the events going on at the levels. Here you can see an example where I linked the different C# events for the different collectibles.
+                I went with this approach for the other systems involving the game so it would be easier to have different events collected to one big script. 
+                </p>
+            <button class="collapsible" onclick="toggleCode('codeSnippet1')">Collectible System</button>
+            <div class="code-content" id="codeSnippet1" style="display: none;">
+                <pre>
+                    <code>
+                        #region Collectible
+                        foreach (var c in collectibles)
+                        {
+                            var detector = c.GetComponent&lt;OnPlayerCollision&gt;();
+                
+                            detector.PlayerCollision += c.Collided;
+                            detector.PlayerCollision += () =&gt;
+                            {
+                                collectibleCollector.Collect(c.Value);
+                                ScoreManager.instance.IncreaseCoinScore(c.Value);
+                            };
+                            detector.PlayerCollision += () =&gt;
+                            {
+                
+                                Destroy(c.gameObject);
+                            };
+                
+                        }
+                        #endregion
+                        #region Health
+                        foreach (var h in health)
+                        {
+                            var detectHealth = h.GetComponent&lt;OnPlayerCollision&gt;();
+                            detectHealth.PlayerCollision += h.Collide;
+                            detectHealth.PlayerCollision += () =&gt;
+                            {
+                
+                                healthCollector.Collect(h.Value);
+                                healthSystem.OnHeal(1);
+                                ScoreManager.instance.IncreasePackageScore(h.Value);
+                
+                
+                            };
+                            detectHealth.PlayerCollision += () =&gt;
+                            {
+                                Destroy(h.gameObject);
+                            };
+                
+                        }
+                        #endregion
+                    </code>
+                  </pre>                  
+    
+          </div>  
+                  
+        </div>
+        <!-- Code Snippet -->
+        <div class="collapsible-code">
+            <p> Small glimpse of the movement of the character. I made a InputManager script that calls a seperate event script where I called delegate for different kinds of events, in this case, Vector2 event.
+                I also created player stats with Scriptable Object for the designers to change and tweak the different values. 
+                </p>
+            <button class="collapsible" onclick="toggleCode('codeSnippet2')">Player Movement</button>
+            <div class="code-content" id="codeSnippet2" style="display: none;">
+                <pre>
+                    <code>
+                        public void CheckMoveDirection(bool isMovingRight)
+                        {
+                            if(isMovingRight != IsFacingRight)
+                                Turn();
+                        }
+                    
+                        public void Turn()
+                        {
+                            Vector3 scale = transform.localScale;
+                            scale.x *= -1;
+                            transform.localScale = scale;
+                            IsFacingRight = !IsFacingRight;
+                            UpdateCollider(playerCollider);
+                        }
+                    
+                        public void Movement(Vector2 input)
+                        {
+                            if (!cantMove)
+                            {
+                                moveDirection = input;
+                                float targetSpeed = input.x * playerStats.moveSpeed;
+                                float speedDif = targetSpeed - Rb.velocity.x;
+                                float accelerate = (Mathf.Abs(targetSpeed) > 0.01f) ? playerStats.acceleration : playerStats.deacceleration;
+                                movement = Mathf.Pow(Mathf.Abs(speedDif) * accelerate, playerStats.velocityPower) * Mathf.Sign(speedDif);
+                                Rb.AddForce(movement * Vector2.right);
+                    
+                            }
+                    
+                            PlayerAnimation.Run(input != Vector2.zero);
+                    
+                        }
+                        private void OnEnable()
+                        {
+                            InputManager.moveEvent += Movement;
+                        }
+                    
+                        private void OnDisable()
+                        {
+                            InputManager.moveEvent -= Movement;
+                        }
+                    </code>
+                  </pre>                  
+    
+          </div>  
+                  
+        </div>
+        <!-- Code Snippet -->
+        <div class="collapsible-code">
+            <p>  Here I used a Save System with Binary Formatter with the reason being so players wouldn't be able to change value.
+                Down below you see a small glimpse of how I create a Save and Load System and doing a save and load of all the different systems that was in the game.
+                </p>
+            <button class="collapsible" onclick="toggleCode('codeSnippet3')">Save System</button>
+            <div class="code-content" id="codeSnippet3" style="display: none;">
+                <pre>
+                    <code>
+                        #region SAVE AND LOAD
+                        private void Serialize<T>(T data, string fileName)
+                        {
+                            var bf = new BinaryFormatter();
+                            var fs = File.Create(Application.persistentDataPath + "/" + fileName);
+                            bf.Serialize(fs, data);
+                            fs.Close();
+                    
+                    
+                        }
+                    
+                        private T DeSerialize<T>(string fileName)
+                        {
+                            if (!File.Exists(Application.persistentDataPath + "/" + fileName)) return default;
+                    
+                            var bf = new BinaryFormatter();
+                            var fs = File.OpenRead(Application.persistentDataPath + "/" + fileName);
+                            var data = (T)bf.Deserialize(fs);
+                            fs.Close();
+                    
+                            return data;
+                    
+                    
+                        }
+                        public void LoadAll()
+                        {
+                            LoadData();
+                            LoadStats();
+                            LoadAbilities();
+                            LoadLevelIndex();
+                            GetLevelData(levelID);
+                        }
+                        #endregion
+                    
+                        #region Abilities
+                        public void SaveAbilities()
+                        {
+                            var data = new Abilities
+                            {
+                                jump = jump,
+                                slide = slide,
+                    
+                            };
+                            Serialize(data, "savedAbilities.dat");
+                    
+                        }
+                        public void LoadAbilities()
+                        {
+                            var data = DeSerialize<Abilities>("savedAbilities.dat");
+                    
+                            if (data == default(Abilities)) return;
+                    
+                            jump = data.jump;
+                            slide = data.slide;
+                    
+                        }
+                        #endregion
+                    </code>
+                  </pre>                  
+    
+          </div>  
+                  
+        </div>
+
+
+        <h2 class="heading">Conclusion</h2>
+        <p>  These are some glimpse of tasks I worked on during my time at the internship. Overall, It was a cozy atmosphere at the studio and I enjoyed my time the entire duration of my internship. I learned new things, such as improving my coding conventions and I also learned how to take bigger responsibility as a developer.</p>
+        
+
+
+    </section>
+
+    <!-- ======GALLERY SECTION===== -->
+    <section class="gallery" id="gallery">
+    <h2 class="heading">Gallery</h2>
+    <div class="about-content">
+        
+        <p>No images available</p>
+
+    </div>
+    
+    </section>
+
+    <footer class="footer">
+        <div class="footer-topicon">
+            <a href="index.html"><i class='bx bxs-left-arrow-square'></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts/project.js"></script>
+</body>
+</html>
