@@ -312,6 +312,11 @@ section{
     color: var(--text-color);
     font-weight: 300;
 }
+.education-content .content h4{
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
 
 .tab-panel {
     display: none;
@@ -355,8 +360,11 @@ section{
 /*About Section */
 .about-content{
     padding-top: 3rem;
+    padding: 2rem;
     text-align: center;
-    border: 1px solid #fff;
+    justify-content: center;
+    background-color: var(--bg-color);
+    
 
 }
 
@@ -368,6 +376,10 @@ section{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 
+}
+.about-content u{
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 /*Projects*/
